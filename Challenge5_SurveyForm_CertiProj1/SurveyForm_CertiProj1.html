@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="'utf-8">
+        <title>Survey Form</title>
+        <!-- <link rel="stylesheet" href="styles.css">
+          -->
+        <link rel="stylesheet" href="style_SurveyForm.css">
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Kindly fill up the survey form. Your participation is greatly appreciated.</p>
+
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Enter your name : 
+                <input type="text" id="name" name="name" placeholder="Full Name"  required>
+            </label>
+            <label for="email" id="email-label">Enter your email : 
+                <input type="email" id="email" name="email" placeholder="Valid Email" required>
+            </label>
+            <label for="number" id="number-label">Enter your age : 
+                <input type="number" id="number" name="number" min="18" max="108" placeholder="Valid Age" required>
+            </label>
+
+            <label for="gender">
+                Gender : 
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male"> Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female"> Female</label></label>
+
+            <label for="dropdown">Choose your Profession : 
+                <select name="occupation" id="dropdown" required>
+                    <option value="">Select</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Student">Student</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Choose your 
+                    Hobbies</legend>
+                <div class="checkbox-item"><input type="checkbox" name="hobby" id="cricket" value="cricket"><label for="cricket"> Cricket</label></div>
+                <div class="checkbox-item"><input type="checkbox" name="hobby" id="music" value="music"><label for="music"> Music</label></div>
+                <div class="checkbox-item"><input type="checkbox" name="hobby" id="dance" value="dance"><label for="dance"> Dance</label></div>
+                <div class="checkbox-item"><input type="checkbox" name="hobby" id="reading" value="reading"><label for="reading"> Reading</label></div>
+                <div class="checkbox-item"><input type="checkbox" name="hobby" id="reading" value="reading"><label for="other"> Other</label></div>
+            </fieldset>
+
+            <textarea name="bio" id="bio-input" rows="3" cols="25">Tell us more yourself ...</textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>

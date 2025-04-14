@@ -1,0 +1,66 @@
+:root{
+    --primary-color: rgb(5, 248, 17);
+    --content-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1rem;
+
+    max-width: 80%;
+
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--content-color);
+
+    border: double 3px var(--content-color);
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#description {
+    font-style: italic;
+}
+
+label {
+    display: block;
+}
+
+label, fieldset {
+    padding: 2px;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+input[type="radio"]+label {
+    display: inline;
+}
+input[type="number"] {
+    width: 16%;
+}
+
+.checkbox-item > *{
+    display: inline;
+    padding: 5px;
+}
+
+textarea { 
+    margin: 2% 0;
+    padding: 1%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 2% 0;
+    background-color: var(--primary-color);
+    color: var(--content-color);
+    border: solid 1px var(--content-color);
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgb(3, 70, 6);
+    transition-duration: 200ms;
+}
